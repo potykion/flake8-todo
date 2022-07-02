@@ -5,7 +5,7 @@ import re
 
 import pycodestyle
 
-NOTE_REGEX = re.compile(r'^(TODO|FIXME)', re.IGNORECASE)  # noqa
+NOTE_REGEX = re.compile(r'^\s(TODO|FIXME)', re.IGNORECASE)  # noqa
 
 
 def check_todo_notes(physical_line):
